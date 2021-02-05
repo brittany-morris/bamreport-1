@@ -36,7 +36,7 @@ myButton = Button(root, text = "show selection", command = show).grid(column = 0
 
 #creating a dropdown menu
 def show():
-    lbl2 = Label(root, text=clicked.get()).grid(column = 0, row = 3)
+    lbl2 = Label(root, text=clicked.get()).grid(column = 1, row = 3)
 
 clicked = StringVar()
 clicked.set("Select Options")
@@ -49,14 +49,14 @@ options1 = [
 ]
 
 drop = OptionMenu(root, clicked, *options1)
-drop.grid(column = 0, row = 1)
+drop.grid(column = 1, row = 1)
 
 #need to fix issue where is user cclicks button, the option will print over the last
-myButton = Button(root, text = "show selection", command = show).grid(column = 0, row = 4)
+myButton = Button(root, text = "show selection", command = show).grid(column = 1, row = 4)
 
 #creating a dropdown menu
 def show():
-    lbl2 = Label(root, text=clicked.get()).grid(column = 0, row = 3)
+    lbl2 = Label(root, text=clicked.get()).grid(column = 2, row = 3)
 
 clicked = StringVar()
 clicked.set("Select Options")
@@ -69,10 +69,10 @@ options1 = [
 ]
 
 drop = OptionMenu(root, clicked, *options1)
-drop.grid(column = 0, row = 1)
+drop.grid(column = 2, row = 1)
 
 #need to fix issue where if user clicks button, the option selected will print over the las
-myButton = Button(root, text = "show selection", command = show).grid(column = 0, row = 4)
+myButton = Button(root, text = "show selection", command = show).grid(column = 2, row = 4)
 
 #call the mainloop funtion to run the program
 root.mainloop()
