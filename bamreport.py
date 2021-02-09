@@ -1,4 +1,4 @@
-#!/usr/bin/env python6
+#!/usr/bin/env python3
 
 from tkinter import *
 from tkcalendar import * 
@@ -64,7 +64,7 @@ incident_list = []
 def incident_selection():
 	global incident_list
 	for i in type_list:
-		if i.get() == 1:
+		if i == 1:
 			incident_list += i
 	 
 
@@ -79,28 +79,28 @@ incidentvar5 = IntVar()
 incidentvar6 = IntVar()
 incidentvar7 = IntVar()
 
-type_cb1 = Checkbutton(root, text = "Intellectual Property Theft", variable = incidentvar1, anchor = W).grid(column = 0, row = 8)
+type_cb1 = Checkbutton(root, text = "Intellectual Property Theft", variable = incidentvar1).grid(column = 0, row = 8, sticky = W)
 
-type_cb2 = Checkbutton(root, text = "Financial Crime", variable = incidentvar2, anchor = W).grid(column = 0, row = 9)
+type_cb2 = Checkbutton(root, text = "Financial Crime", variable = incidentvar2).grid(column = 0, row = 9, sticky = W)
 
-type_cb3 = Checkbutton(root, text = "Insider Threat", variable = incidentvar3, anchor = W).grid(column = 0, row = 10)
+type_cb3 = Checkbutton(root, text = "Insider Threat", variable = incidentvar3).grid(column = 0, row = 10, sticky = W)
 
-type_cb4 = Checkbutton(root, text = "Destructive Attacks", variable = incidentvar4, anchor = W).grid(column = 0, row = 11)
+type_cb4 = Checkbutton(root, text = "Destructive Attacks", variable = incidentvar4).grid(column = 0, row = 11, sticky = W)
 
-type_cb5 = Checkbutton(root, text = "Protected Health Information", variable = incidentvar5, anchor = W).grid(column = 0, row = 12)
+type_cb5 = Checkbutton(root, text = "Protected Health Information", variable = incidentvar5).grid(column = 0, row = 12, sticky = W)
 
-type_cb6 = Checkbutton(root, text = "Personally Identifiable Information", variable = incidentvar6, anchor = W).grid(column = 0, row = 13)
+type_cb6 = Checkbutton(root, text = "Personally Identifiable Information", variable = incidentvar6).grid(column = 0, row = 13, sticky = W)
 
-type_cb7 = Checkbutton(root, text = "Other", variable = incidentvar7, anchor = W).grid(column = 0, row = 14)
+type_cb7 = Checkbutton(root, text = "Other", variable = incidentvar7).grid(column = 0, row = 14, sticky = W)
 
 type_list = [
-	incidentvar1,
-	incidentvar2,
-	incidentvar3,
-	incidentvar4,
-	incidentvar5,
-	incidentvar6,
-	incidentvar7
+	int(incidentvar1.get()),
+	int(incidentvar2.get()),
+	int(incidentvar3.get()),
+	int(incidentvar4.get()),
+	int(incidentvar5.get()),
+	int(incidentvar6.get()),
+	int(incidentvar7.get())
 ]
 
 
