@@ -11,9 +11,15 @@ A GUI designed to make fast and easy security reports, using Python with tkinter
         - git clone https://github.com/MikeCox13/bamreporting.git
         
 # Getting Started
-        - In order to get started and use our email function, the user will need to enter their email address on line 99 and corresponding password on line 100
+        - In order to get started and use our email function, 
+	the user will need to enter their email address on line 99 
+	and corresponding password on line 100
  
 # Less Secure App Instructions
-	- Proceed to Google Account Settings, on the top left hand side of the web page. Find the security toolbar and scroll down to Less Secure App Access. Select the button to turn on access. Turning on the app access, allows Python to use less secure sign-in technology to access your gmail account.       
+	- Proceed to Google Account Settings, on the top left hand 
+	side of the web page. Find the security toolbar and scroll 
+	down to Less Secure App Access. Select the button to turn on 
+	access. Turning on the app access, allows Python to use less
+	secure sign-in technology to access your gmail account.       
  
 # Thank you for using Bam Report!
