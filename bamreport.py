@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 
 from tkinter import *
-from tkcalendar import * 
 from textwrap import TextWrapper 
 from reportlab.pdfgen.canvas import Canvas 
 import smtplib, email, ssl
@@ -9,6 +8,9 @@ from email import encoders
 from email.mime.base import MIMEBase
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
+
+#BEFORE GETTING STARTED - Enter you [EMAIL ADDRESS] and [PASSWORD] on lines 99 and 100
+
 
 #create a blank window called root
 root = Tk()
